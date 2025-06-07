@@ -1,21 +1,25 @@
 @font-face {
   font-family: "Great Vibes";
-  src: url("fonts/GreatVibes-Regular.ttf") format("truetype");
+  src: url("fonts/GreatVibes-Regular.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 
 @font-face {
   font-family: "Baker_Signet_BT_Regular";
-  src: url("fonts/Baker_Signet_BT_Regular.ttf") format("truetype");
+  src: url("fonts/Baker_Signet_BT_Regular.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
+
 @font-face {
   font-family: "KZ_Balmoral";
-  src: url("fonts/KZ_Balmoral.ttf") format("truetype");
+  src: url("fonts/KZ_Balmoral.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
+  font-display: swap;
 }
 
 * {
