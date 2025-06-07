@@ -1,0 +1,281 @@
+@font-face {
+  font-family: "Great Vibes";
+  src: url("fonts/GreatVibes-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Lobster-Regular";
+  src: url("fonts/Lobster-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Baker_Signet_BT_Regular";
+  src: url("fonts/Baker_Signet_BT_Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "KZ_Balmoral";
+  src: url("fonts/KZ_Balmoral.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  width: 100%;
+  height: auto;
+  overflow-x: hidden;
+  background-color: #fef9f3;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  position: relative;
+  color: #655c4c;
+}
+.background-video {
+  top: 0;
+  left: 0;
+  width: 100%;
+
+  object-fit: cover;
+}
+
+.image_main {
+  height: auto;
+  z-index: 3;
+}
+
+.name {
+  position: absolute;
+  z-index: 3;
+  top: 240px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+
+  font-family: "Great Vibes", sans-serif;
+
+  font-size: 100px;
+  color: #ffff;
+}
+
+.uzatu {
+  z-index: 3;
+  position: absolute;
+  top: 350px;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+  font-family: "KZ_Balmoral", sans-serif;
+  text-align: center;
+
+  font-size: 65px;
+  color: #ffff;
+}
+
+.text {
+  margin: 0 40px 20px 40px;
+  display: flex;
+  justify-content: center;
+  z-index: 3;
+  text-align: center;
+  font-size: 50px;
+  font-family: "KZ_Balmoral", sans-serif;
+}
+
+.name_text {
+  font-family: "KZ_Balmoral", sans-serif;
+  font-size: 75px;
+  padding: 15px 0 0 0;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.text_two {
+  text-transform: uppercase;
+  width: 290px;
+  margin: 0 auto;
+  line-height: 2;
+  padding: 0 20px;
+  font-size: 20px;
+  text-align: center;
+  font-family: "Baker_Signet_BT_Regular", sans-serif;
+}
+.image-wrapper {
+  position: relative;
+  height: 600px;
+}
+.masked-image {
+  width: 100%;
+  position: absolute;
+  top: -100px;
+  object-fit: cover;
+  -webkit-mask-image: linear-gradient(
+    to bottom,
+    transparent 0%,
+    black 30%,
+    black 70%,
+    transparent 100%
+  );
+  mask-image: linear-gradient(
+    to bottom,
+    transparent 0%,
+    black 50%,
+    black 70%,
+    transparent 100%
+  );
+  mask-mode: match-source;
+  mask-repeat: no-repeat;
+  mask-size: 100% 100%;
+}
+
+.text_wrapper {
+  position: relative;
+  margin-bottom: 100px;
+}
+
+.flower {
+  position: absolute;
+  bottom: 170px;
+  right: -20px;
+  width: 120px;
+  transform: rotate(-140deg);
+  height: auto;
+}
+.flower_two {
+  position: absolute;
+  bottom: -50px;
+  left: -20px;
+  width: 120px;
+  transform: rotate(-10deg);
+  height: auto;
+}
+.wrapper_calendar {
+  margin: 0 auto;
+  top: -100px;
+  text-align: center;
+  padding: 20px 0;
+  position: relative;
+  height: 400px;
+}
+
+.text_one {
+  margin: 0 40px;
+  display: flex;
+  justify-content: center;
+
+  text-align: center;
+  font-size: 50px;
+  font-family: "KZ_Balmoral", sans-serif;
+}
+
+.wedding_time,
+.text_next {
+  text-transform: uppercase;
+  width: 290px;
+  line-height: 2;
+  font-size: 25px;
+  text-align: center;
+  font-family: "Baker_Signet_BT_Regular", sans-serif;
+}
+
+.calendar-img {
+  width: 300px;
+}
+.calendar {
+  position: absolute;
+  width: 300px;
+  transform: translate(-50%);
+}
+
+.countdown-wrapper {
+  padding-top: 100px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.countdown-title {
+  font-size: 70px;
+  font-family: "KZ_Balmoral", sans-serif;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.countdown {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  font-family: "KZ_Balmoral", sans-serif;
+
+  padding: 10px 30px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.countdown div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.countdown span {
+  font-weight: bold;
+  font-size: 70px;
+}
+
+.countdown small {
+  font-size: 40px;
+  opacity: 0.8;
+  margin-top: 4px;
+}
+
+.address {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.address_title {
+  font-family: "KZ_Balmoral", sans-serif;
+  font-size: 70px;
+  margin-top: 40px;
+  text-align: center;
+}
+
+.addres_text {
+  text-transform: uppercase;
+  font-size: 20px;
+  padding-bottom: 10px;
+  font-family: "Baker_Signet_BT_Regular", sans-serif;
+}
+
+.map_wrapper {
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+
+.map_title {
+  padding: 40px 50px 0 50px;
+  text-align: center;
+  font-family: "Baker_Signet_BT_Regular", sans-serif;
+}
+
+.map-logo {
+  display: block;
+
+  justify-content: center;
+  width: 100px;
+  height: 90px;
+  margin: 0 auto;
+}
