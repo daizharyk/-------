@@ -39,6 +39,9 @@ window.addEventListener("scroll", () => {
     );
   }
 
+
   updateCountdown();
+
+  
   const interval = setInterval(updateCountdown, 1000);
 });
